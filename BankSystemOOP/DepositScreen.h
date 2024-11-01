@@ -1,0 +1,61 @@
+#pragma once
+#include <iostream>
+#include "Screen.h"
+#include "BankClient.h"
+#include "ZInputValidate.h"
+
+class DepositScreen : protected Screen
+{
+
+private:
+
+    static string _ReadAccountNumber()
+    {
+        string AccountNumber = "";
+        cout << "\nPlease enter AccountNumber? ";
+        cin >> AccountNumber;
+        return AccountNumber;
+    }
+
+
+public:
+
+    static void ShowDepositScreen()
+    {
+        _DrawScreenHeader("\t   Deposit Screen");
+
+        string AccountNumber = _ReadAccountNumber();
+
+
+        while (!BankClient::DoesClientExists(AccountNumber))
+        {
+            cout << "\nClient with [" << AccountNumber << "] does not exist.\n";
+            AccountNumber = _ReadAccountNumber();
+        }
+
+        BankClient Client1 = BankClient::Find(AccountNumber);
+        _PrintClient(Client1);
+
+        double Amount = 0;
+        cout << "\nPlease enter deposit amount? ";
+        Amount = ZInputValidate::ReadDblNumber();
+
+        cout << "\nAre you sure you want to perform this transaction? ";
+        char Answer = 'n';
+        cin >> Answer;
+
+        if (Answer == 'Y' || Answer == 'y')
+        {
+            Client1.Deposit(Amount);
+            cout << "\nAmount Deposited Successfully.\n";
+            cout << "\nNew Balance Is: " << Client1.AccountBalance;
+
+        }
+        else
+        {
+            cout << "\nOperation was cancelled.\n";
+        }
+
+    }
+
+};

@@ -1,0 +1,20 @@
+﻿  Main.cpp
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(39,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(44,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(56,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(217,28): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(348,28): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\ZString.h(396,20): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\User.h(302,2): warning C4240: nonstandard extension used: access to 'User::LogInfo' now defined to be 'public', previously it was defined to be 'private'
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\User.h(124,9): message : see declaration of 'User::LogInfo'
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(216,2): warning C4240: nonstandard extension used: access to 'BankClient::TransferLog' now defined to be 'public', previously it was defined to be 'private'
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(127,9): message : see declaration of 'BankClient::TransferLog'
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(29,97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(147,61): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(148,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(148,99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\DepositScreen.h(49,29): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\WithdrawScreen.h(48,34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\BankClient.h(298): warning C4715: 'BankClient::Save': not all control paths return a value
+D:\C++ Projects\BankSystemOOP\BankSystemOOP\User.h(237): warning C4715: 'User::Save': not all control paths return a value
+  BankSystemOOP.vcxproj -> D:\C++ Projects\BankSystemOOP\x64\Debug\BankSystemOOP.exe
